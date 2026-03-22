@@ -1,4 +1,3 @@
-import { prisma } from "@cip/db";
 
 export default async function AppDashboardPage() {
   const projects = await prisma.project.findMany({
