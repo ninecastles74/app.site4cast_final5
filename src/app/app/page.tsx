@@ -1,6 +1,6 @@
 
 export default async function AppDashboardPage() {
-  const projects = await prisma.project.findMany({
+  const projects = await project.findMany({
     take: 5,
     orderBy: { createdAt: "desc" },
   });
